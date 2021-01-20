@@ -29,6 +29,6 @@ if [ ! -e "$CONFIG_FILE.bak" ]; then
 fi
 
 echo "Downloading the configuration file for your touchpad..."
-curl $CONFIG_FILE https://raw.github.com/zhaostu/chromium-os-touchpad/master/$TOUCHPAD.xorg.conf
+curl $CONFIG_FILE https://raw.github.com/zhaostu/chromium-os-touchpad/master/$TOUCHPAD.xorg.conf | sh
 
 echo "Configuration finished. Please type 'restart ui' or reboot to make the change effective."
