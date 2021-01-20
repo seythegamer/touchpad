@@ -3,7 +3,6 @@
 CONFIG_FILE=$(echo /etc/gesture/??-touchpad-cmt.conf)
 test -f $CONFIG_FILE || CONFIG_FILE="/etc/gesture/40-touchpad-cmt.conf"
 fi
-set -e
 
 echo "Mounting the rootfs as read-write..."
 mount -o remount,rw /
